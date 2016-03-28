@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Questionnaire- web development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Load Twitter Bootstrap from CDN -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,200,100,300itlic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default header-navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><h3><b>Q</b>uestionaire</h3></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container  form-wrapper">
+        <div id="form-container">
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">What is your fullname?</label>
+                    <input type="text" class="form-control" id="name" placeholder="Please tell me your fullname">
+                </div>
+                <div class="form-group">
+                    <label for="email">What is your email address?</label>
+                    <input type="email" class="form-control" id="email" placeholder="Please tell me your email address">
+                </div>
+                <div class="form-group">
+                    <label for="name">What is your phone number?</label>
+                    <input type="text" class="form-control" id="name" placeholder="Please tell me your fullname">
+                </div>
+                <div class="form-group">
+                    <label for="website-type">What Kind of website do you want me to develop?</label>
+                    <select class="form-control" id="website-type">
+                        <option>Single Page Application/Website</option>
+                        <option>Small Business Website</option>
+                        <option>Portfolio</option>
+                        <option>Blog</option>
+                        <option>Landing Page</option>
+                        <option disabled>ECommerce Website</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="owner">Who will be the owner of this website?</label>
+                    <select class="form-control" id="owner">
+                        <option hidden>Please tell me who will be the owner of this website?</option>
+                        <option>I will be the owner</option>
+                        <option>My client will be the owner</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Who will be the audience of this website?</label>
+                    <select class="form-control" id="owner">
+                        <option hidden>Please tell me who will be the audience of this website?</option>
+                        <option>I will be the audience</option>
+                        <option>My client will be the audience</option>
+                        <option>My client's clients will be the audience</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="owner-features">What are the important features for the owner?</label>
+                    <textarea row="3" class="form-control" id="owner-features" placeholder="Please tell me What are the important features for the owner?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="audience-features">What are the important features for the audience?</label>
+                    <textarea row="3" class="form-control" id="audience-features" placeholder="Please tell me What are the important features for the audience?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="content">Do you have content for the website?(Texts, Images, Videos)</label>
+                    <select class="form-control" id="owner">
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar navbar-default footer-navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <p>All rights reaerved by Rajan Patil.</p>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="libs/jquery-1.12.2.min.js"></script>
+    <!--Load Twitter Bootstrap script from CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

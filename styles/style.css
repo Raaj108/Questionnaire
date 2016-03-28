@@ -1,0 +1,64 @@
+body {
+    font-family: cursive, roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: dodgerblue;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 200;
+}
+
+hr {
+    color: black;
+    font-size: 34px;
+}
+
+.header-navigation {
+    height: 100px;
+    border-radius: 0;
+}
+
+.footer-navigation {
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 0;
+}
+
+.form-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#form-container {
+    flex: 1;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+    width: 90%;
+    margin: 25px auto;
+}
+
+form h3 {
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+form label,
+form input {
+    font-weight: 400;
+}
+
+form label {
+    font-size: 17px;
+}
+
+form input {
+    font-size: 15px;
+}
