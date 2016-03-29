@@ -1,5 +1,6 @@
 <!doctype html>
-<html>
+<html ng-app="quetionnaireApp">
+
 
 <head>
     <title>Questionnaire- web development</title>
@@ -21,72 +22,8 @@
             </div>
         </nav>
     </header>
-    <div class="container  form-wrapper">
-        <div id="form-container">
-            <form role="form">
-                <div class="form-group">
-                    <label for="name">What is your fullname?</label>
-                    <input type="text" class="form-control" id="name" placeholder="Please tell me your fullname">
-                </div>
-                <div class="form-group">
-                    <label for="email">What is your email address?</label>
-                    <input type="email" class="form-control" id="email" placeholder="Please tell me your email address">
-                </div>
-                <div class="form-group">
-                    <label for="name">What is your phone number?</label>
-                    <input type="text" class="form-control" id="name" placeholder="Please tell me your fullname">
-                </div>
-                <div class="form-group">
-                    <label for="website-type">What Kind of website do you want me to develop?</label>
-                    <select class="form-control" id="website-type">
-                        <option>Single Page Application/Website</option>
-                        <option>Small Business Website</option>
-                        <option>Portfolio</option>
-                        <option>Blog</option>
-                        <option>Landing Page</option>
-                        <option disabled>ECommerce Website</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="owner">Who will be the owner of this website?</label>
-                    <select class="form-control" id="owner">
-                        <option hidden>Please tell me who will be the owner of this website?</option>
-                        <option>I will be the owner</option>
-                        <option>My client will be the owner</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="name">Who will be the audience of this website?</label>
-                    <select class="form-control" id="owner">
-                        <option hidden>Please tell me who will be the audience of this website?</option>
-                        <option>I will be the audience</option>
-                        <option>My client will be the audience</option>
-                        <option>My client's clients will be the audience</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="owner-features">What are the important features for the owner?</label>
-                    <textarea row="3" class="form-control" id="owner-features" placeholder="Please tell me What are the important features for the owner?"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="audience-features">What are the important features for the audience?</label>
-                    <textarea row="3" class="form-control" id="audience-features" placeholder="Please tell me What are the important features for the audience?"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="content">Do you have content for the website?(Texts, Images, Videos)</label>
-                    <select class="form-control" id="owner">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </div>
-
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div>
+    <div class="container  form-wrapper" ng-controller="quetionnaireFormCtrl">
+        <questionnaire-form-dir></questionnaire-form-dir>
     </div>
     <footer>
         <nav class="navbar navbar-default footer-navigation">
@@ -101,6 +38,8 @@
     <!--Load Twitter Bootstrap script from CDN -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="libs/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/directive.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
