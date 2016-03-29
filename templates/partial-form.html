@@ -2,19 +2,19 @@
     <form role="form">
         <div class="form-group">
             <label for="fullname">What is your fullname?</label>
-            <input type="text" class="form-control" name="fullname" ng-model="fullname">
+            <input type="text" class="form-control" name="fullname" ng-model="questionnaire.fullname">
         </div>
         <div class="form-group">
             <label for="email">What is your email address?</label>
-            <input type="email" class="form-control" name="email" ng-model="email">
+            <input type="email" class="form-control" name="email" ng-model="questionnaire.email">
         </div>
         <div class="form-group">
             <label for="name">What is your phone number?</label>
-            <input type="text" class="form-control" name="phone" ng-model="phone">
+            <input type="text" class="form-control" name="phone" ng-model="questionnaire.phone">
         </div>
         <div class="form-group">
-            <label for="website-type">What Kind of website do you want me to develop?</label>
-            <select class="form-control" name="website-type">
+            <label for="websitetype">What Kind of website do you want me to develop?</label>
+            <select class="form-control" name="websitetype" ng-model="questionnaire.websitetype">
                 <option hidden>select one</option>
                 <option>Single Page Application/Website</option>
                 <option>Small Business Website</option>
@@ -26,15 +26,15 @@
         </div>
         <div class="form-group">
             <label for="owner">Who will be the owner of this website?</label>
-            <select class="form-control" name="owner">
+            <select class="form-control" name="owner" ng-model="questionnaire.owner">
                 <option hidden>select one</option>
                 <option>I will be the owner</option>
                 <option>My client will be the owner</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="name">Who will be the audience of this website?</label>
-            <select class="form-control" id="owner">
+            <label for="audience">Who will be the audience of this website?</label>
+            <select class="form-control" name="audience" ng-model="questionnaire.audience">
                 <option hidden>select one</option>
                 <option>I will be the audience</option>
                 <option>My client will be the audience</option>
@@ -42,34 +42,34 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="owner-features">What are the important features for the owner?</label>
-            <textarea row="3" class="form-control" id="owner-features"></textarea>
+            <label for="ownerfeatures">What are the important features for the owner?</label>
+            <textarea row="3" class="form-control" name="ownerfeatures" ng-model="questionnaire.ownerfeatures"></textarea>
         </div>
         <div class="form-group">
-            <label for="audience-features">What are the important features for the audience?</label>
-            <textarea row="3" class="form-control" id="audience-features"></textarea>
+            <label for="audiencefeatures">What are the important features for the audience?</label>
+            <textarea row="3" class="form-control" name="audiencefeatures" ng-model="questionnaire.audiencefeatures"></textarea>
         </div>
         <div class="form-group">
             <label for="content">Do you have content for the website?(Texts, Images, Videos)</label>
-            <select class="form-control" id="owner">
+            <select class="form-control" name="content" ng-model="questionnaire.content">
                 <option>No</option>
                 <option>Yes</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="page-no">How many pages do you want in your website?</label>
-            <input type="number" class="form-control" id="page-no">
+            <label for="pageno">How many pages do you want in your website?</label>
+            <input type="number" class="form-control" name="pageno" ng-model="questionnaire.pageno">
         </div>
         <div class="form-group">
             <label for="domain">Do you have Domain Name for the website?</label>
-            <select class="form-control" id="domain">
+            <select class="form-control" name="domain" ng-model="questionnaire.domain">
                 <option>No</option>
                 <option>Yes</option>
             </select>
         </div>
         <div class="form-group">
             <label for="host">Do you have Host for the website?</label>
-            <select class="form-control" id="host">
+            <select class="form-control" name="host" ng-model="questionnaire.host">
                 <option>No</option>
                 <option>Yes</option>
             </select>

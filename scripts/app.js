@@ -1,20 +1,28 @@
 var app = angular.module('quetionnaireApp', []);
 
 app.controller('quetionnaireFormCtrl', ['$scope', function ($scope) {
-    $scope.fullname = "";
-    $scope.email = "";
-    $scope.phone = "";
-    $scope.owner = "";
+    var temp = {
+        fullname: ''
+        , email: ''
+        , phone: ''
+        , 'websitetype': ''
+        , owner: ''
+        , audience: ''
+        , 'ownerfeatures': ''
+        , 'audiencefeatures': ''
+        , content: ''
+        , 'pageno': ''
+        , domain: ''
+        , host: ''
+    };
 
+    $scope.questionnaire = temp;
 
     $("button[type='submit']").click(function () {
-        console.log($scope.fullname);
-        console.log($scope.email);
-        console.log($scope.phone);
+        console.log($scope.questionnaire);
 
 
     });
-    console.log($scope.fullname);
-    console.log($scope.email);
-    console.log($scope.phone);
+    console.log($scope.questionnaire);
+
 }]);
