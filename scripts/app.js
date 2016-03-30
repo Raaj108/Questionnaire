@@ -23,6 +23,12 @@ app.controller('quetionnaireFormCtrl', ['$scope', function ($scope) {
 
 
     });
+
+    $scope.submitForm = function (isValid) {
+        if (isValid) {
+            console.log('Hello');
+        }
+    }
     console.log($scope.questionnaire);
 
 }]);
