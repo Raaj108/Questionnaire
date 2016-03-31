@@ -3,6 +3,10 @@ body {
     background-color: dodgerblue;
 }
 
+.help-block{
+    color: red;
+}
+
 h3 {
     font-size: 34px;
     font-weight: 200;

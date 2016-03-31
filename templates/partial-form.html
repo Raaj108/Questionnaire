@@ -13,82 +13,82 @@
         </div>
         <div class="form-group">
             <label for="name">What is your phone number?</label>
-            <input type="text" class="form-control" name="phone" ng-model="questionnaire.phone" required>
+            <input type="text" class="form-control" name="phone" ng-model="questionnaire.phone" ng-pattern="phoneNumbr" required>
             <p ng-show="questionnaireForm.phone.$error.required && questionnaireForm.phone.$touched" class="help-block">You Phone Number is required.</p>
-        </div>
-        <div class="form-group">
-            <label for="websitetype">What Kind of website do you want me to develop?</label>
-            <select class="form-control" name="websitetype" ng-model="questionnaire.websitetype" required>
-                <option hidden>select one</option>
-                <option>Single Page Application/Website</option>
-                <option>Small Business Website</option>
-                <option>Portfolio</option>
-                <option>Blog</option>
-                <option>Landing Page</option>
-                <option disabled>ECommerce Website</option>
-            </select>
-            <p ng-show="questionnaireForm.websitetype.$error.required && questionnaireForm.websitetype.$touched" class="help-block">Please select one type.</p>
-        </div>
-        <div class="form-group">
-            <label for="owner">Who will be the owner of this website?</label>
-            <select class="form-control" name="owner" ng-model="questionnaire.owner" required>
-                <option hidden>select one</option>
-                <option>I will be the owner</option>
-                <option>My client will be the owner</option>
-            </select>
-            <p ng-show="questionnaireForm.owner.$error.required && questionnaireForm.owner.$touched" class="help-block">Please Tell me who will be the owner.</p>
-        </div>
-        <div class="form-group">
-            <label for="audience">Who will be the audience of this website?</label>
-            <select class="form-control" name="audience" ng-model="questionnaire.audience" required>
-                <option hidden>select one</option>
-                <option>I will be the audience</option>
-                <option>My client will be the audience</option>
-                <option>My client's clients will be the audience</option>
-            </select>
-            <p ng-show="questionnaireForm.audience.$error.required && questionnaireForm.audience.$touched" class="help-block">Please Tell me who will be the audience.</p>
-        </div>
-        <div class="form-group">
-            <label for="ownerfeatures">What are the important features for the owner?</label>
-            <textarea row="3" class="form-control" name="ownerfeatures" ng-model="questionnaire.ownerfeatures" required></textarea>
-            <p ng-show="questionnaireForm.ownerfeatures.$error.required && questionnaireForm.ownerfeatures.$touched" class="help-block">Please Tell me the important features for the owner.</p>
-        </div>
-        <div class="form-group">
-            <label for="audiencefeatures">What are the important features for the audience?</label>
-            <textarea row="3" class="form-control" name="audiencefeatures" ng-model="questionnaire.audiencefeatures" required></textarea>
-            <p ng-show="questionnaireForm.audiencefeatures.$error.required && questionnaireForm.audiencefeatures.$touched" class="help-block">Please Tell me the important features for the audience.</p>
-        </div>
-        <div class="form-group">
-            <label for="content">Do you have content for the website?(Texts, Images, Videos)</label>
-            <select class="form-control" name="content" ng-model="questionnaire.content" required>
-                <option>No</option>
-                <option>Yes</option>
-            </select>
-            <p ng-show="questionnaireForm.content.$error.required && questionnaireForm.content.$touched" class="help-block">Please select yes or no.</p>
-        </div>
-        <div class="form-group">
-            <label for="pageno">How many pages do you want in your website?</label>
-            <input type="number" class="form-control" name="pageno" ng-model="questionnaire.pageno" required>
-            <p ng-show="questionnaireForm.pageno.$error.required && questionnaireForm.pageno.$touched" class="help-block">Please tell me how many pages do you need in your website</p>
-        </div>
-        <div class="form-group">
-            <label for="domain">Do you have Domain Name for the website?</label>
-            <select class="form-control" name="domain" ng-model="questionnaire.domain" required>
-                <option>No</option>
-                <option>Yes</option>
-            </select>
-            <p ng-show="questionnaireForm.domain.$error.required && questionnaireForm.domain.$touched" class="help-block">Please select yes or no.</p>
-        </div>
-        <div class="form-group">
-            <label for="host">Do you have Host for the website?</label>
-            <select class="form-control" name="host" ng-model="questionnaire.host" required>
-                <option>No</option>
-                <option>Yes</option>
-            </select>
-            <p ng-show="questionnaireForm.host.$error.required && questionnaireForm.host.$touched" class="help-block">Please select yes or no.</p>
-        </div>
+            <p ng-show="questionnaireForm.phone.$error.pattern && questionnaireForm.phone.$touched" class="help-block">Please Enter the valid Phone number</p>
+            <div class="form-group">
+                <label for="websitetype">What Kind of website do you want me to develop?</label>
+                <select class="form-control" name="websitetype" ng-model="questionnaire.websitetype" required>
+                    <option hidden>select one</option>
+                    <option>Single Page Application/Website</option>
+                    <option>Small Business Website</option>
+                    <option>Portfolio</option>
+                    <option>Blog</option>
+                    <option>Landing Page</option>
+                    <option disabled>ECommerce Website</option>
+                </select>
+                <p ng-show="questionnaireForm.websitetype.$error.required && questionnaireForm.websitetype.$touched" class="help-block">Please select one type.</p>
+            </div>
+            <div class="form-group">
+                <label for="owner">Who will be the owner of this website?</label>
+                <select class="form-control" name="owner" ng-model="questionnaire.owner" required>
+                    <option hidden>select one</option>
+                    <option>I will be the owner</option>
+                    <option>My client will be the owner</option>
+                </select>
+                <p ng-show="questionnaireForm.owner.$error.required && questionnaireForm.owner.$touched" class="help-block">Please Tell me who will be the owner.</p>
+            </div>
+            <div class="form-group">
+                <label for="audience">Who will be the audience of this website?</label>
+                <select class="form-control" name="audience" ng-model="questionnaire.audience" required>
+                    <option hidden>select one</option>
+                    <option>I will be the audience</option>
+                    <option>My client will be the audience</option>
+                    <option>My client's clients will be the audience</option>
+                </select>
+                <p ng-show="questionnaireForm.audience.$error.required && questionnaireForm.audience.$touched" class="help-block">Please Tell me who will be the audience.</p>
+            </div>
+            <div class="form-group">
+                <label for="ownerfeatures">What are the important features for the owner?</label>
+                <textarea row="3" class="form-control" name="ownerfeatures" ng-model="questionnaire.ownerfeatures" required></textarea>
+                <p ng-show="questionnaireForm.ownerfeatures.$error.required && questionnaireForm.ownerfeatures.$touched" class="help-block">Please Tell me the important features for the owner.</p>
+            </div>
+            <div class="form-group">
+                <label for="audiencefeatures">What are the important features for the audience?</label>
+                <textarea row="3" class="form-control" name="audiencefeatures" ng-model="questionnaire.audiencefeatures" required></textarea>
+                <p ng-show="questionnaireForm.audiencefeatures.$error.required && questionnaireForm.audiencefeatures.$touched" class="help-block">Please Tell me the important features for the audience.</p>
+            </div>
+            <div class="form-group">
+                <label for="content">Do you have content for the website?(Texts, Images, Videos)</label>
+                <select class="form-control" name="content" ng-model="questionnaire.content" required>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <p ng-show="questionnaireForm.content.$error.required && questionnaireForm.content.$touched" class="help-block">Please select yes or no.</p>
+            </div>
+            <div class="form-group">
+                <label for="pageno">How many pages do you want in your website?</label>
+                <input type="number" class="form-control" name="pageno" ng-model="questionnaire.pageno" required>
+                <p ng-show="questionnaireForm.pageno.$error.required && questionnaireForm.pageno.$touched" class="help-block">Please tell me how many pages do you need in your website</p>
+            </div>
+            <div class="form-group">
+                <label for="domain">Do you have Domain Name for the website?</label>
+                <select class="form-control" name="domain" ng-model="questionnaire.domain" required>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <p ng-show="questionnaireForm.domain.$error.required && questionnaireForm.domain.$touched" class="help-block">Please select yes or no.</p>
+            </div>
+            <div class="form-group">
+                <label for="host">Do you have Host for the website?</label>
+                <select class="form-control" name="host" ng-model="questionnaire.host" required>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <p ng-show="questionnaireForm.host.$error.required && questionnaireForm.host.$touched" class="help-block">Please select yes or no.</p>
+            </div>
 
-        <button type="submit" name="submit" ng-disabled="questionnaireForm.$invalid" class="btn btn-primary">Submit</button>
-        <button type="submit" name="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" name="submit" ng-disabled="questionnaireForm.$invalid" class="btn btn-primary">Submit</button>
+            <button type="button" name="reset" class="btn btn-danger" ng-click="reset()">Reset</button>
     </form>
-</div>
+    </div>
